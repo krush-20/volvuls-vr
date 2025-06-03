@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Volvulus WebXR Scene</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: #121212">
+      <!-- Camera -->
+      <a-entity id="rig" position="0 1.6 0">
+        <a-camera wasd-controls-enabled="true">
+          <a-cursor></a-cursor>
+        </a-camera>
+      </a-entity>
+
+      <!-- Lighting -->
+      <a-entity light="type: ambient; intensity: 0.8"></a-entity>
+      <a-entity light="type: directional; intensity: 1" position="2 4 4"></a-entity>
+
+      <!-- Ground -->
+      <a-plane rotation="-90 0 0" width="10" height="10" color="#333"></a-plane>
+
+      <!-- Volvulus 3D Model -->
+      <a-entity 
+        id="volvulus"
+        gltf-model="model.glb"
+        scale="1.5 1.5 1.5"
+        position="0 0 -3"
+        rotation="0 180 0"
+      ></a-entity>
+    </a-scene>
+  </body>
+</html>
