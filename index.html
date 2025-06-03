@@ -7,8 +7,9 @@
   </head>
   <body>
     <a-scene background="color: #121212">
-      <!-- Camera -->
-      <a-entity id="rig" position="0 1.6 0">
+      
+      <!-- Camera Rig with Movement Controls -->
+      <a-entity id="rig" position="0 1.6 0" movement-controls>
         <a-camera wasd-controls-enabled="true">
           <a-cursor></a-cursor>
         </a-camera>
@@ -25,10 +26,11 @@
       <a-entity 
         id="volvulus"
         gltf-model="Iris20_W23.compressed.glb"
-        scale="1.5 1.5 1.5"
-        position="0 0 -3"
-        rotation="0 180 0"
+        scale="1 1 1"
+        position="0 0 -2"
+        rotation="0 0 0"
       ></a-entity>
+
     </a-scene>
   </body>
 </html>
