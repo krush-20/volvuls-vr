@@ -39,18 +39,19 @@
       <!-- Ground Plane -->
       <a-plane rotation="-90 0 0" width="10" height="10" color="#333"></a-plane>
 
-      <!-- Volvulus Model from Dropbox -->
-     <a-entity 
-  gltf-model="model1Iris_W23.compressed.glb"
-  animation-mixer
-  click-response
-  scale="0.5 0.5 0.5"
-  position="0 0 -2"
-  rotation="0 0 0"
-></a-entity>
-
+      <!-- Volvulus Model -->
+      <a-entity 
+        id="volvulus"
+        gltf-model="model1Iris_W23.compressed.glb"
+        animation-mixer
+        click-response
+        scale="0.8 0.8 0.8"
+        position="0 1 -2"
+        rotation="0 180 0"
+      ></a-entity>
 
     </a-scene>
   </body>
 </html>
+
 
